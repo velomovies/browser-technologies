@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="static/css/styles.css">
+    <title>Rijksmuseum</title>
+  </head>
+
+  <body>
+    
+    <main>
+      <!-- Home page -->
+      <section id="home">
+        <h1 data-bind="name"></h1>
+        <article data-bind="info"></article>
+      </section>
+
+      <!-- List of art pieces -->
+      <section id="art">   
+        <a data-bind="link" href="#detail" tabindex="-1">
+          <h1 data-bind="title"></h1>
+          <img class="smallImage" data-bind="image" src="">
+        </a>
+      </section>
+
+      <!-- Detail page of art piece -->
+      <section id="detail">
+        <h1 data-bind="title"></h1>
+        <a data-bind="link" href="#" tabindex="-1"><img data-bind="image" src=""></a>
+        <p data-bind="description"></p>
+        <article data-bind="info">
+        </article>
+      </section>
+
+      <!-- Zoomed-in image -->
+      <section id="image">
+        <img data-bind="image" src="#" alt="Schilderij">
+      </section>
+
+      <!-- Error page -->
+      <section id="error">
+        <h1>Error!</h1>
+        <p>Er is iets misgegaan...</p>
+      </section>
+
+      <!-- Spinning loader -->
+      <div class="loader hidden">laden...</div>
+    </main>
+
+    <!-- Select artist menu -->
+    <nav>
+      <div class="nav">
+        <ul>
+          <a href="#home">
+            <li>Kunstenaar</li>
+          </a>
+          <a href="#art">
+            <li>Kunstwerken</li>
+          </a>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Select artist menu -->
+    <aside>
+        <svg width="1em" height="2.1em">
+            <circle cx=".5em" cy=".5em" r=".20em"/>
+            <circle cx=".5em" cy="1.10em" r=".20em"/>
+            <circle cx=".5em" cy="1.70em" r=".20em"/>
+          </svg>
+          <article>
+            <ul class="selectArtist" id="selectArtist">
+              <li data-bind="artistName"></li>
+            </ul>
+          </article>
+      </aside>
+
+
+  </body>
+
+  <!-- Libraries -->
+  <script src="static/js/libraries/transparency.min.js"></script>
+  <script src="static/js/libraries/routie.js"></script>
+
+  <!-- APP initialize -->
+  <script type="module" src="static/js/app.js"></script>
+
+</html>
