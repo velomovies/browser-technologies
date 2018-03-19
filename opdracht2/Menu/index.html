@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Menu</title>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+    body > div {
+      position: absolute;
+      right: 9999px;
+      opacity: 0;
+    }
+    body > div:focus-within {
+      right: 0;
+      opacity: 1;
+    }
+    body > div.unhidden {
+      opacity: 1;
+      right: 0;
+    }
+    body > div a {
+      padding: 1em;
+    }
+    body > div a:first-child {
+      background-image: url(img/menu.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      color: transparent;
+    }    
+    nav {
+      position: absolute;
+      background-color: white;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+    nav.hamburger {
+      position: absolute;
+      top: -99px;
+      left: 50%;
+      transition: all .3s;
+    }
+    nav.hamburger.open {
+      top: 0;
+    }
+  </style>
+</head>
+  <body>
+    <div>
+      <a lang="en" href="#nav">Skip to nav</a>
+      <a lang="en" href="#main">Skip to main</a>
+   </div>
+    <main id="main">
+      <section>
+        <article>
+          <h2>Proident labore id laborum do id.</h2>
+          <p>Consequat aliquip ex deserunt labore. Sit proident ad enim laboris id. Pariatur magna elit magna eu non excepteur non adipisicing
+            culpa sint tempor fugiat ullamco laborum. Officia dolore cillum Lorem amet fugiat. Consectetur tempor duis ullamco laborum
+            ut cillum sunt cillum. Quis sit ex officia do fugiat aute commodo laboris quis qui consequat. Exercitation ipsum pariatur
+            deserunt eu velit laboris excepteur. Fugiat ut Lorem duis fugiat veniam reprehenderit officia aute laborum eiusmod cillum
+            officia. Duis in velit eiusmod eu consequat ea cillum dolore in ea quis. Duis fugiat laborum dolore eu enim enim aliqua
+            exercitation nulla laboris consectetur eiusmod. Sit adipisicing incididunt magna deserunt. Laboris enim amet pariatur adipisicing.
+            Sint cupidatat excepteur eiusmod reprehenderit commodo amet esse irure et consectetur nostrud ea voluptate. Commodo ex
+            laboris voluptate ad. Adipisicing magna excepteur est ea officia. Anim tempor reprehenderit reprehenderit aliqua pariatur
+            dolor adipisicing nulla duis nulla consectetur velit in. Occaecat voluptate incididunt anim sunt deserunt non culpa est
+            ipsum sit qui mollit. Do voluptate anim est nisi consectetur dolore eu ad officia eiusmod veniam sit mollit quis. Veniam
+            enim nostrud elit cillum et. Occaecat consequat velit eu mollit. Minim labore ad anim qui sint laborum deserunt. Ex esse
+            amet aute ex reprehenderit proident amet ipsum ipsum eiusmod excepteur amet laboris. Exercitation commodo esse labore aliquip
+            velit ut ullamco labore aute laboris in cillum qui quis.</p>
+          <h2>Proident nulla deserunt sunt ad cillum fugiat non nulla esse incididunt excepteur do aliquip.</h2>
+          <p>Consequat aliquip ex deserunt labore. Sit proident ad enim laboris id. Pariatur magna elit magna eu non excepteur non adipisicing
+            culpa sint tempor fugiat ullamco laborum. Officia dolore cillum Lorem amet fugiat. Consectetur tempor duis ullamco laborum
+            ut cillum sunt cillum. Quis sit ex officia do fugiat aute commodo laboris quis qui consequat. Exercitation ipsum pariatur
+            deserunt eu velit laboris excepteur. Fugiat ut Lorem duis fugiat veniam reprehenderit officia aute laborum eiusmod cillum
+            officia. Duis in velit eiusmod eu consequat ea cillum dolore in ea quis. Duis fugiat laborum dolore eu enim enim aliqua
+            exercitation nulla laboris consectetur eiusmod. Sit adipisicing incididunt magna deserunt. Laboris enim amet pariatur adipisicing.
+            Sint cupidatat excepteur eiusmod reprehenderit commodo amet esse irure et consectetur nostrud ea voluptate. Commodo ex
+            laboris voluptate ad. Adipisicing magna excepteur est ea officia. Anim tempor reprehenderit reprehenderit aliqua pariatur
+            dolor adipisicing nulla duis nulla consectetur velit in. Occaecat voluptate incididunt anim sunt deserunt non culpa est
+            ipsum sit qui mollit. Do voluptate anim est nisi consectetur dolore eu ad officia eiusmod veniam sit mollit quis. Veniam
+            enim nostrud elit cillum et. Occaecat consequat velit eu mollit. Minim labore ad anim qui sint laborum deserunt. Ex esse
+            amet aute ex reprehenderit proident amet ipsum ipsum eiusmod excepteur amet laboris. Exercitation commodo esse labore aliquip
+            velit ut ullamco labore aute laboris in cillum qui quis.</p>
+          </article>
+      </section>
+    </main>
+    <nav id="nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Info</a></li>
+        <li><a href="#">Diensten</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </body>
+  <script>
+    function toggleHamburger() {
+      document.querySelector('nav').classList.toggle('open')
+      location.hash = ''
+    }
+
+    document.querySelector('nav').classList.add('hamburger')
+    document.querySelector('div').classList.add('unhidden')
+    document.querySelector('div a').addEventListener('click', toggleHamburger) 
+  </script>
+
+</html>
