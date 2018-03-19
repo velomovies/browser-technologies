@@ -87,8 +87,16 @@ Beoordelingscriteria
   - een beschrijving van de problemen die je hebt gevonden
   - beschrijf hoe je de problemen hebt opgelost
   - of hoe je dit zou oplossen (met todo’s) als je genoeg tijd en budget zou hebben
+<<<<<<< HEAD
 
 
 Plaatjes toevoegen
 Betere hierarchie/structuur
 code snippets
+=======
+  
+  
+  Link naar applicatie: https://velomovies.github.io/wafs/app/
+  
+  
+>>>>>>> f27657608bd346f381b7b2142e2f1844631636e5
