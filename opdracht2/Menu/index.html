@@ -8,9 +8,11 @@
   <style>
     body {
       font-family: sans-serif;
+      margin: 0;
     }
     body > div {
       position: absolute;
+      z-index: 99;
       right: 9999px;
       opacity: 0;
     }
@@ -23,27 +25,38 @@
       right: 0;
     }
     body > div a {
-      padding: 1em;
+      padding: .1em;
     }
     body > div a:first-child {
       background-image: url(img/menu.png);
       background-size: contain;
       background-repeat: no-repeat;
       color: transparent;
+    }
+    body > div a.open {
+      background-image: url(img/close.png);
+    }
+    main {
+      width: 35em;
     }    
     nav {
       position: absolute;
       background-color: white;
+      width: 100%;
     }
     nav ul {
       list-style: none;
       padding: 0;
     }
+    nav li {
+      margin: .5em;
+    }
     nav.hamburger {
+      text-align: center;
       position: absolute;
-      top: -99px;
-      left: 50%;
+      top: -199px;
       transition: all .3s;
+      background-color: #ededed;
     }
     nav.hamburger.open {
       top: 0;
@@ -101,7 +114,7 @@
   <script>
     function toggleHamburger() {
       document.querySelector('nav').classList.toggle('open')
-      location.hash = ''
+      document.querySelector('div a').classList.toggle('open')
     }
 
     document.querySelector('nav').classList.add('hamburger')

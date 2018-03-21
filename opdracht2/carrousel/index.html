@@ -7,7 +7,22 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Caroussel</title>
   <style>
-    
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+    section {  
+      display: grid;
+      grid-auto-flow: column;
+      overflow-x: scroll;
+    }
+    article {
+      display: inline-block;
+      margin: 1em;
+      padding: 1em;
+      box-shadow: .1em .1em .3em #ababab;
+      width: 35em;
+    }
   </style>
 </head>
 
