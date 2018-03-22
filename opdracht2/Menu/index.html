@@ -9,12 +9,12 @@
     body {
       font-family: sans-serif;
       margin: 0;
+      width: 35em;
     }
     body > div {
       position: absolute;
       z-index: 99;
-      right: 9999px;
-      opacity: 0;
+      right: 0;
     }
     body > div:focus-within {
       right: 0;
@@ -114,12 +114,17 @@
   <script>
     function toggleHamburger() {
       document.querySelector('nav').classList.toggle('open')
-      document.querySelector('div a').classList.toggle('open')
+      document.querySelectorAll('div a')[0].classList.toggle('open')
+    }
+    function turnOffMenu() {
+      document.querySelector('nav').classList.remove('open')
+      document.querySelectorAll('div a')[0].classList.remove('open')
     }
 
     document.querySelector('nav').classList.add('hamburger')
     document.querySelector('div').classList.add('unhidden')
-    document.querySelector('div a').addEventListener('click', toggleHamburger) 
+    document.querySelectorAll('div a')[0].addEventListener('click', toggleHamburger)
+    document.querySelectorAll('div a')[1].addEventListener('click', turnOffMenu) 
   </script>
 
 </html>

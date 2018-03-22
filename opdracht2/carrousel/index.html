@@ -12,16 +12,22 @@
       font-family: sans-serif;
     }
     section {  
+      display: flex;
+      flex-wrap: nowrap;
       display: grid;
       grid-auto-flow: column;
-      overflow-x: scroll;
     }
     article {
       display: inline-block;
+      flex: 0 0 auto;
       margin: 1em;
       padding: 1em;
+      border: .1em solid #ababab;
       box-shadow: .1em .1em .3em #ababab;
       width: 35em;
+    }
+    article.hidden {
+      display: none;
     }
   </style>
 </head>
@@ -47,5 +53,54 @@
       </section>
     </main>
   </body>
+  <script>
+    // if() {
+      var article = document.getElementsByTagName('article')
+      var page = 0
+      var next_button = document.createElement("button")
+      var previous_button = document.createElement("button")
+      var previous = document.createTextNode("<")
+      var next = document.createTextNode(">")
+
+      
+        previous_button.appendChild(previous)
+        next_button.appendChild(next)
+        document.body.appendChild(previous_button)
+        document.body.appendChild(next_button)
+
+      for(var i = 0; i < article.length; i++) {
+        article[i].classList.add('hidden')
+      }
+      article[page].classList.remove('hidden')
+
+      function articlePrevious() {
+        if (page <= 0) {
+          page = 2
+        } else {
+          page--
+        } 
+        for(var i = 0; i < article.length; i++) {
+          article[i].classList.add('hidden')
+        }
+        article[page].classList.remove('hidden')
+      }
+
+      function articleNext() {    
+        if (page >= 2) {
+          page = 0
+        } else {
+          page++
+        } 
+        for(var i = 0; i < article.length; i++) {
+          article[i].classList.add('hidden')
+        }
+        article[page].classList.remove('hidden')
+      }
+
+      document.getElementsByTagName('button')[0].addEventListener('click', articlePrevious)
+      document.getElementsByTagName('button')[1].addEventListener('click', articleNext)
+  // }
+
+</script>
 
 </html>
