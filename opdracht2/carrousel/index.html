@@ -54,8 +54,8 @@
     </main>
   </body>
   <script>
-    // if() {
-      var article = document.getElementsByTagName('article')
+    if (document.querySelector || ('classList' in document.body)) {
+      var article = document.querySelectorAll('article')
       var page = 0
       var next_button = document.createElement("button")
       var previous_button = document.createElement("button")
@@ -97,9 +97,9 @@
         article[page].classList.remove('hidden')
       }
 
-      document.getElementsByTagName('button')[0].addEventListener('click', articlePrevious)
-      document.getElementsByTagName('button')[1].addEventListener('click', articleNext)
-  // }
+      document.querySelectorAll('button')[0].addEventListener('click', articlePrevious)
+      document.querySelectorAll('button')[1].addEventListener('click', articleNext)
+       }
 
 </script>
 

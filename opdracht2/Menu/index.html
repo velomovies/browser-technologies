@@ -112,6 +112,7 @@
     </nav>
   </body>
   <script>
+    if (document.querySelector || ('classList' in document.body)) {
     function toggleHamburger() {
       document.querySelector('nav').classList.toggle('open')
       document.querySelectorAll('div a')[0].classList.toggle('open')
@@ -125,6 +126,7 @@
     document.querySelector('div').classList.add('unhidden')
     document.querySelectorAll('div a')[0].addEventListener('click', toggleHamburger)
     document.querySelectorAll('div a')[1].addEventListener('click', turnOffMenu) 
+  }
   </script>
 
 </html>

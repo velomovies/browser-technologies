@@ -55,21 +55,42 @@ De acht features:
 
 Je kan een website op veel verschillende manieren in accessibility verbeteren. Al is het vaak makkelijker voor jezelf als je er mee begint bij het maken van de website. Achteraf een website helemaal accessible maken vormt soms problemen. Daarnaast moet iedereen het eens zijn met de keuzes die er zijn gemaakt.
 
-### To Do
-Wat moet ik nog doen om progressive enhancement op mijn webapp toe te passen. 
-* Om de website overzichtpagina te laden zouden de afbeeldingen gecompressed kunnen worden. Daarnaast zouden er ook meerdere formaten afbeeldingen gebruikt kunnen worden zodat je imgscrset kan gebruiken om de app zo toegankelijk mogelijk te maken.
-* Bij een langzame verbinding werkt de app redelijk. Toch zie je een hele lange tijd helemaal niets. Ook geen laad icoon. De gebruiker moet daardoor te lang wachten. Daarnaast wordt de tekst ook van de server gehaald. Dit zou ook in de html kunnen staan omdat iedereen altijd de zelfde tekst als eerst ziet.
-* Cookies gebruik ik niet. Eventueel zou je ik cookies kunnen gebruiken waardoor de gebruiker zijn eigen keuze op kan slaan. Hierdoor wordt de app persoonlijker per gebruiker. 
-* Op dit moment werkt de hele app niet als er de javascript niet werkt. Ik heb daar voor nu geen oplossing voor gemaakt. Wat ik zou kunnen doen is een waarschuwing neerzetten aan het begin van de app als de javascript uit staat. En het maken van een standaard tekst over kunstenaars die je ziet als de javascript uit staat.
+### Afbeelding (TO DO)
 
-### Done
-Een aantal dingen heb ik meteen kunnen aanpassen om progressive enhancement toe te passen.
-* Toepassen van Local Storage. Dit zorgt ervoor dat bij een tweede visit door de gebruiker de website sneller laadt.
-* Het font dat nu wordt gebruikt is een standaard font. Dit zorgt ervoor dat er geen apart font gedownload hoeft te worden.
-* De kleur is netjes. Met genoeg contrast.
-* De app is redelijk goed voor trackpad en tab. Je kan zonder muis de hele app door. Waardoor ook mensen zonder muis een goede ervaring hebben met mijn website. Als ik meer tijd had gehad, had ik nog een manier gebruikt om betere focus states te hebben. 
+Om de website overzichtpagina te laden zouden de afbeeldingen gecompressed kunnen worden. Daarnaast zouden er ook meerdere formaten afbeeldingen gebruikt kunnen worden zodat je imgscrset kan gebruiken om de app zo toegankelijk mogelijk te maken.
+
+### Breedband (TO DO)
+
+Bij een langzame verbinding werkt de app redelijk. Toch zie je een hele lange tijd helemaal niets. Ook geen laad icoon. De gebruiker moet daardoor te lang wachten. Daarnaast wordt de tekst ook van de server gehaald. Dit zou ook in de html kunnen staan omdat iedereen altijd de zelfde tekst als eerst ziet.
+
+### Cookies (TO DO)
+
+Cookies gebruik ik niet. Eventueel zou je ik cookies kunnen gebruiken waardoor de gebruiker zijn eigen keuze op kan slaan. Hierdoor wordt de app persoonlijker per gebruiker.
+
+### Fonts (DONE)
+
+Het font dat nu wordt gebruikt is een standaard font. Dit zorgt ervoor dat er geen apart font gedownload hoeft te worden.
+
+### Javascript (TO DO)
+
+Op dit moment werkt de hele app niet als er de javascript niet werkt. Ik heb daar voor nu geen oplossing voor gemaakt. Wat ik zou kunnen doen is een waarschuwing neerzetten aan het begin van de app als de javascript uit staat. En het maken van een standaard tekst over kunstenaars die je ziet als de javascript uit staat.
+
+### Kleur (DONE)
+
+De kleur is netjes. Met genoeg contrast.
+
+### Local Storage (DONE)
+
+Toepassen van Local Storage. Dit zorgt ervoor dat bij een tweede visit door de gebruiker de website sneller laadt.
+
+### Trackpad (DONE)
+
+De app is redelijk goed voor trackpad en tab. Je kan zonder muis de hele app door. Waardoor ook mensen zonder muis een goede ervaring hebben met mijn website. Als ik meer tijd had gehad, had ik nog een manier gebruikt om betere focus states te hebben.
 
 ### Screenreader
+Een screenreader werkt goed op de website. Het was lastig om een werkende windows screenreader te vinden. Nadat ik er een had gevonden werd de tekst gelezen zoals ik het had bedacht. Het lastige aan onepage webapps is dat het gevaarlijk is dat de hele pagina in één keer wordt gelezen. Gelukkig gebeurde dit niet bij mij. De applicatie ging wel de naam van mijn app twee keer voorlezen. Dat komt omdat er een `<title>` is en hij haalt die naam nog op uit de data.
+
+### De test
 Een screenreader werkt goed op de website. Het was lastig om een werkende windows screenreader te vinden. Nadat ik er een had gevonden werd de tekst gelezen zoals ik het had bedacht. Het lastige aan onepage webapps is dat het gevaarlijk is dat de hele pagina in één keer wordt gelezen. Gelukkig gebeurde dit niet bij mij. De applicatie ging wel de naam van mijn app twee keer voorlezen. Dat komt omdat er een `<title>` is en hij haalt die naam nog op uit de data.
 
 ### De opdracht
@@ -87,16 +108,6 @@ Beoordelingscriteria
   - een beschrijving van de problemen die je hebt gevonden
   - beschrijf hoe je de problemen hebt opgelost
   - of hoe je dit zou oplossen (met todo’s) als je genoeg tijd en budget zou hebben
-<<<<<<< HEAD
+  
+Link naar applicatie: https://velomovies.github.io/wafs/app/
 
-
-Plaatjes toevoegen
-Betere hierarchie/structuur
-code snippets
-=======
-  
-  
-  Link naar applicatie: https://velomovies.github.io/wafs/app/
-  
-  
->>>>>>> f27657608bd346f381b7b2142e2f1844631636e5
