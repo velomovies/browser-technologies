@@ -93,6 +93,8 @@ Een screenreader werkt goed op de website. Het was lastig om een werkende window
 ### De test
 Een screenreader werkt goed op de website. Het was lastig om een werkende windows screenreader te vinden. Nadat ik er een had gevonden werd de tekst gelezen zoals ik het had bedacht. Het lastige aan onepage webapps is dat het gevaarlijk is dat de hele pagina in één keer wordt gelezen. Gelukkig gebeurde dit niet bij mij. De applicatie ging wel de naam van mijn app twee keer voorlezen. Dat komt omdat er een `<title>` is en hij haalt die naam nog op uit de data.
 
+![Test](img/test1.png)
+
 ### De opdracht
 Voor deze opdracht ga je toepassen wat je van opdracht 1.1 hebt geleerd.
 - Pas Progressive enhancement toe op je OBA Web App.
