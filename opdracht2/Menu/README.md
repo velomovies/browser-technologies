@@ -32,7 +32,7 @@ Onderstaand de testen die ik gedaan heb bij het device-lab.
 
 Het component werkt zo goed als op alle websites. Ze werken alleen niet allemaal op dezelfde manier:
 * Chrome --> werkt
-* IE8 --> werkt, maar de javascript niet  (door `querySelector`)
+* IE8 --> werkt, maar de javascript niet  (door `classList`)
 *  Mozilla firefox --> werkt
 
 ## Bronnen

@@ -82,6 +82,9 @@ De kleur is netjes. Met genoeg contrast.
 ### Local Storage (DONE)
 
 Toepassen van Local Storage. Dit zorgt ervoor dat bij een tweede visit door de gebruiker de website sneller laadt.
+```javascript
+localStorage.setItem(dataEndpoint, JSON.stringify(data))
+```
 
 ### Trackpad (DONE)
 

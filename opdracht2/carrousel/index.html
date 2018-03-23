@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Caroussel</title>
   <style>
     body {
@@ -54,7 +53,7 @@
     </main>
   </body>
   <script>
-    if (document.querySelector || ('classList' in document.body)) {
+    if (document.querySelector && ('classList' in document.body)) {
       var article = document.querySelectorAll('article')
       var page = 0
       var next_button = document.createElement("button")
