@@ -47,7 +47,8 @@
 
   }
 
-  if ('webkitSpeechRecognition' in window) {
+  if ('webkitSpeechRecognition' in window &&
+      location.protocol === 'https:') {
     document.body.insertAdjacentHTML('beforeend', '<button class="voice-rec"><span>Spreek in (engels)</span></button>')
     var voiceRec = document.querySelector('.voice-rec')
 
