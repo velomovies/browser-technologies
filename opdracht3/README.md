@@ -77,9 +77,9 @@ Daarnaast is het heel handig dat een gebruiker niet perse hoeft te scrollen. Doo
 ## De test
 
 Onderstaand de testen die ik gedaan heb bij het device-lab. Bij alle telefoons deed de app het goed. De spraakherkening werkte alleen op `https://` en in een chrome browser. Het invoeren van een eigen ingredient werkte op alle devices.
-![Test](img/test1.png)
-![Test](img/test2.png)
-![Test](img/test3.png)
+![Test](sources/img/test1.png)
+![Test](sources/img/test2.png)
+![Test](sources/img/test3.png)
 
 Door een [feature detect](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing/Feature_detection) heb ik gezorgd dat er geen knop verschijnt om de spraakherkening te starten. De spraakherkening doet het alleen op een google chrome browser. Het gaat echter in de komende maanden zeer waarschijnlijk uitbreiden naar firefox. Daarnaast heeft safari een manier van spraakherkening. Deze heb ik 
 
