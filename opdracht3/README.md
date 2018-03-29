@@ -80,7 +80,6 @@ Onderstaand de testen die ik gedaan heb bij het device-lab. Bij alle telefoons d
 ![Test](img/test1.png)
 ![Test](img/test2.png)
 ![Test](img/test3.png)
-![Test](img/test4.png)
 
 Door een [feature detect](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing/Feature_detection) heb ik gezorgd dat er geen knop verschijnt om de spraakherkening te starten. De spraakherkening doet het alleen op een google chrome browser. Het gaat echter in de komende maanden zeer waarschijnlijk uitbreiden naar firefox. Daarnaast heeft safari een manier van spraakherkening. Deze heb ik 
 
