@@ -34,7 +34,7 @@
         var ownInput = '<fieldset class="eigen" id="eigen"><legend>Eigen ingredienten</legend><input type="checkbox" id="' + textValue + '" checked><label for="' + textValue + '">' + textValue + '</label></fieldset>'
         formFieldset.insertAdjacentHTML('afterend', ownInput)
       } else if (fieldset && textValue) {
-        var ownInput = '<input type="checkbox" id="' + textValue + number + '" checked><label for="' + textValue + number + '">' + textValue + '</label>'
+        var ownInput = '<input type="checkbox" id="' + textValue + number + 'eigen" checked><label for="' + textValue + number + 'eigen">' + textValue + '</label>'
         fieldset.insertAdjacentHTML('beforeend', ownInput)
       }
     }
