@@ -2,6 +2,7 @@
 //Robuuste, toegankelijke websites leren bouwen …
 
 Voor opdracht 3 heb ik een case uitgekozen. De case is:
+
 `Ik wil boodschappen-om-tostis-te-maken in mijn boodschappenlijstje kunnen gooien.`
 
 Deze case heb ik uitgewerkt tot een werkend product.
@@ -30,13 +31,17 @@ element.insertAdjacentHTML('position', 'text')
 
 ### Drie lagen
 De drie lagen die ik heb toegevoegd zijn redelijk duidelijk.
+
 **Laag 1**
+
 HTML en een beetje CSS. Deze laag is een formulier waarbij je kan kiezen welke producten je wil hebben. Zonder CSS zou dit ook werken, maar css maakt de app wel een stuk gebruiksvriendelijker. Er staat een tekst onder dat de gebruiker de pagina kan printen om 'niet te vergeten wat er gekocht moet worden.'
 
 **Laag 2**
+
 HTML, CSS en Javascript. Door CSS goed toe te voegen heb ik kunnen zorgen dat de print versie meer print vriendelijk is. Daarnaast kan ik met javascript een script toevoegen dat zorgt dat er een knop is om de pagina uit te printen.
 
 **Laag 3**
+
 Dit gaat vooral om de Javascript. Ik heb een functie toegevoegd waarbij je eigen ingredienten kan toevoegen. Deze wordt alléén laten zien als er javascript op de goede manier gebruikt kan worden. Naast deze functie heb ik een spraakherkening toegevoegd die het app gebruik kan verbeteren.
 
 ## Features
