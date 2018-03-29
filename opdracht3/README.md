@@ -54,7 +54,10 @@ if ('querySelector' in document &&
       // Jouw code...
 }
 ```
-Naast deze check heb ik gezorgd dat er een `classList.add('enhanced')` op de body komt. Daardoor kan ik in de CSS makkelijk een aantal dingen toevoegen/weghalen. 
+Naast deze check heb ik gezorgd dat er een `classList.add('enhanced')` op de body komt. Daardoor kan ik in de CSS makkelijk een aantal dingen toevoegen/weghalen. Als javascript wordt ondersteund voegt javascript zelf een class `enhanced` toe aan de main. 
+```javascript
+main.classList.add('enhanced')
+```
 
 De app maakt gebruik van spraakherkening van google. Deze wordt alléén ondersteund door chrome op dit moment (en is ook nog een webkit). Ik detect eerst of een gebruiker wel spraakherkening kan gebruiken. Daarnaast werkt spraakherkening alleen als er een `https://` verbinding is. Onderstaand de code die ik heb gebruikt:
 ```javascript
@@ -62,11 +65,6 @@ if ('webkitSpeechRecognition' in window &&
     location.protocol === 'https:') {
       // Jouw code...
 }
-```
-
-Als javascript wordt ondersteund voegt javascript zelf een class `enhanced` toe. 
-```javascript
-main.classList.add('enhanced')
 ```
 
 ## Accessibility 
