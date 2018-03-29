@@ -64,6 +64,11 @@ if ('webkitSpeechRecognition' in window &&
 }
 ```
 
+Als javascript wordt ondersteund voegt javascript zelf een class `enhanced` toe. 
+```javascript
+main.classList.add('enhanced')
+```
+
 ## Accessibility 
 
 Bij het maken van de app heb ik op een aantal accesibility problemen gelet.
