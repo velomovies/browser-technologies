@@ -1,7 +1,7 @@
 # Table of contents
 
-- [Maak je eigen tosti!](#maak-je-eigen-tosti-)
-  * [De 'core' functionaliteit](#de-'core'-functionaliteit)
+- [Maak je eigen tosti!](#maak-je-eigen-tosti)
+  * [De 'core' functionaliteit](#de-core-functionaliteit)
   * [Features](#features)
   * [Accessibility](#accessibility)
   * [De test](#de-test)
@@ -9,7 +9,7 @@
   * [De opdracht](#opdracht-3---progressive-enhanced-browser-technologies)
   * [License](#license)
 
-# Maak je eigen tosti!
+# Maak je eigen tosti
 //Robuuste, toegankelijke websites leren bouwen …
 
 Voor opdracht 3 heb ik een case uitgekozen. De case is:
@@ -21,7 +21,7 @@ Deze case heb ik uitgewerkt tot een werkend product.
 ![screenshot van app](sources/img/screenshot.png)
 > [**Sneak peak**](https://velomovies.github.io/browser-technologies/opdracht3/).
 
-## De 'core' functionaliteit
+## De core functionaliteit
 De core functionaliteit van de case die ik heb gekozen is een lijst waar je kan kiezen welk product je wil hebben. Deze lijst bestaat uit een `form` waar je kan kiezen. Bij het kiezen, kiest de gebruiker wat er allemaal op zijn/haar tosti komt. Vervolgens zou de gebruiker deze lijst als boodschappenlijstje kunnen uitprinten en meenemen naar de winkel.
 
 ```HTML
