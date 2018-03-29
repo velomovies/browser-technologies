@@ -1,3 +1,15 @@
+# Table of contents
+
+- [Maak je eigen tosti!](#maak-je-eigen-tosti-)
+  * [De 'core' functionaliteit](#de--core--functionaliteit)
+    + [Drie lagen](#drie-lagen)
+  * [Features](#features)
+  * [Accessibility](#accessibility)
+  * [De test](#de-test)
+  * [TO DO](#to-do)
+  * [De opdracht](#opdracht-3---progressive-enhanced-browser-technologies)
+  * [License](#license)
+
 # Maak je eigen tosti!
 //Robuuste, toegankelijke websites leren bouwen …
 
