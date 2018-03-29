@@ -95,6 +95,7 @@ Op een telefoon browser kan je de pagina ook printen. Vervolgens kan je in het m
 Mijn tests. (ook de mobiele varianten):
 * IE10 --> Werkt (zonder spraakherkening)
 * IE11 --> Werkt (zonder spraakherkening)
+* EDGE --> Werkt (zonder spraakherkening)
 * Safari --> Werkt (zonder spraakherkening)
 * Chrome --> Werkt helemaal (met spraakherkening)
 * Firefox --> Werkt (zonder spraakherkening)
